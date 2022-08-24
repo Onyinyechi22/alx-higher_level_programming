@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Print alternating cases of the alphabet in reverse"""
+# Author -Bamidele Adefolaju
 
-for num in range(122, 96, -1):
-    if (num % 2):
-        num = 65 + num - 97
-    print("{}".format(chr(num)), end="")
+i = 0
+for c in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(c - i)), end="")
+    i = 32 if i == 0 else 0
